@@ -54,31 +54,31 @@
 
 ### ユーザー登録
 「新規登録」ボタンからユーザー登録  
-![register](https://github.com/ashe09/circus/assets/70144543/b95f1568-b9e3-4d8b-9a22-74226d5ecae3)
+![register](https://github.com/ashe09/circus/assets/70144543/7a41b022-64b6-4081-9e18-94fd8d1ad1ad)
 
 ### ユーザープロフィール編集
 例：登録カテゴリーを「Artist」から「Partner」へ変更したり、画像を新しくアップすると反映される  
 ※他の項目も編集可能です  
-![editprofile](https://github.com/ashe09/circus/assets/70144543/4dcef41f-f4ac-4f08-ae98-459cfdc85b73)
+![editprofile](https://github.com/ashe09/circus/assets/70144543/4b38017c-f56f-49e3-912c-1ef9b9e01713)
 
 ### 退会
 アカウントページから退会をクリックするとユーザー情報が削除されます。  
-![deleteuser](https://github.com/ashe09/circus/assets/70144543/81f2b4da-79bd-48d2-9cc8-745694064095)
+![deleteuser](https://github.com/ashe09/circus/assets/70144543/4afd1f4f-44de-40ae-9bfc-9882ddefb2e0)
 
 ### 出品されている商品を購入
 商品を選択しカートに入れると買い物かごへ入ります。  
 ※買い物かごから実際の購入への機能は実装しておりません。  
-![cartin](https://github.com/ashe09/circus/assets/70144543/b794db11-4942-43df-9815-02318a37f78f)
+![cartin](https://github.com/ashe09/circus/assets/70144543/d1ea5a18-a27e-43fa-9b22-36cde8330d3b)
 
 ### イベント申し込み
 お知らせページから運営者主催のイベントに申し込みできます。  
-![applyevent](https://github.com/ashe09/circus/assets/70144543/bb059108-4313-4c38-9914-5c96fccb20d6)
+![applyevent](https://github.com/ashe09/circus/assets/70144543/c85ecf04-7407-4827-9186-ac69ff2216ab)
 
 フォームは確認画面から入力ページに戻っても値が保持され、送信するとDBへ入力情報が格納されます。  
-![applyevent2](https://github.com/ashe09/circus/assets/70144543/c61f0809-9104-47b2-bfea-9d2084a0e49b)
+![applyevent2](https://github.com/ashe09/circus/assets/70144543/ba6613c2-1344-4e19-90e1-680f38de8656)
 
 ### 管理者専用ページ
 管理者のアカウントのみ特定のtypeを付与して登録し、ログイン時に管理者か一般ユーザーかどうかを判定します。  
 管理者であれば専用ページにアクセスできるようにしています。  
 専用ページでは登録された商品やイベントの申し込み情報など一覧で確認できます。  
-![admin](https://github.com/ashe09/circus/assets/70144543/7681bbd7-b8f9-4e48-84f2-88ae3ec3410e)
+![admin](https://github.com/ashe09/circus/assets/70144543/c76522af-dc39-4c6c-9930-2adf06ab0f8d)
