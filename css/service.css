@@ -1,0 +1,80 @@
+/* main service
+=======================*/
+.wrapper {
+	background-image: url("../images/background03.png");
+}
+
+.serviceSubhead {
+	color: #591c05;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.subhead.role {
+	background: #edc;
+}
+
+.contentWrap {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.casesImg {
+	width: 140px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.casesImg img {
+	border-radius: 50%;
+}
+
+.users {
+	color: #591c05;
+	padding: 10px 0;
+}
+
+.casesContent {
+	width: 32%;
+	padding: 24px;
+	margin-right: 3%;
+	background: #edc;
+	border-radius: 10px;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+.casesContent:nth-child(3n) {
+	margin-right: 0;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+	.casesContent {
+		width: 70%;
+		margin: 0 auto 20px;
+	}
+
+	.casesContent:nth-child(3n) {
+		margin-right: auto;
+	}
+
+	.casesContent:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+	.contentWrap {
+		margin-bottom: 0;
+	}
+
+	.casesContent {
+		width: 100%;
+		box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+	}
+}

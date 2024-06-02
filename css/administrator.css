@@ -1,0 +1,255 @@
+/* index.html Gifts一覧
+=======================*/
+.wrapper {
+	background: #fbf8ef;
+}
+
+.wrapper.adminGWrapper {
+	width: 2500px;
+	overflow: auto;
+	font-size: 1.4rem;
+}
+
+.aselect {
+	font-size: 1.4rem;
+	width: 140px;
+	padding: 5px;
+	background: #edc;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.adminMenu.cmenu ul {
+	height: 346px;
+}
+
+.adminPage {
+	max-width: initial;
+}
+
+.administrator {
+	padding: 80px 20px 0;
+	text-align: center;
+}
+
+.adminG {
+	margin-bottom: 50px;
+}
+
+.categorySearchFrom {
+	width: 570px;
+	margin-bottom: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.searchSelect {
+	min-width: 160px;
+	margin-right: 50px;
+	position: relative;
+}
+
+.searchSelect::before {
+	content: "";
+	position: absolute;
+	top: 45px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666;
+	pointer-events: none;
+}
+
+#categorySearch,
+#categoryGSearch,
+#categoryPSearch {
+	height: 44px;
+	margin-top: 0;
+	cursor: pointer;
+}
+
+.searchSubmit {
+	min-width: 160px;
+	padding-top: 25px;
+}
+
+.searchButton {
+	height: 44px;
+}
+
+.adRecord {
+	margin: 0 auto;
+}
+
+.adRecord th {
+	color: #fbf8ef;
+	border: 1px solid #fbf8ef;
+  background: #591c05;
+  padding: 4px 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.adRecord td {
+	border: 1px solid #fbf8ef;
+  background: #edc;
+  padding: 10px;
+	vertical-align: middle;
+}
+
+.th80 {
+	width: 80px;
+}
+
+.th120 {
+	width: 120px;
+}
+
+.th200 {
+	width: 200px;
+}
+
+.th300 {
+	width: 300px;
+}
+
+.th450 {
+	width: 450px;
+}
+
+.admingiftsImg {
+	width: 60px;
+	height: 60px;
+}
+
+.left {
+	text-align: left;
+}
+
+.ed {
+	color: #2e64ef;
+	cursor: pointer;
+}
+
+.gpName {
+	color: #591c05;
+	cursor: pointer;
+}
+
+/* projectsRecord.html Projects一覧
+=======================*/
+.wrapper.adminPWrapper {
+	width: 3000px;
+	overflow: auto;
+	font-size: 1.4rem;
+}
+
+/* eventAppRecord.html イベント申し込み一覧
+=======================*/
+.wrapper.adminEWrapper {
+	width: 100%;
+	overflow: auto;
+	font-size: 1.4rem;
+}
+
+/* contactRecord.html お問い合わせ一覧
+=======================*/
+.wrapper.adminCWrapper {
+	width: 100%;
+	overflow: auto;
+	font-size: 1.4rem;
+}
+
+/* categoryEdit.html カテゴリー管理TOP
+=======================*/
+.wrapper.adminCATEWrapper {
+	width: 100%;
+	font-size: 1.6rem;
+}
+
+.adminCategoryMenu {
+	width: 570px;
+	margin: 0 auto 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.adminCategoryMenu button {
+	margin-right: 100px;
+	cursor: pointer;
+}
+
+.adminCategoryMenu button:last-child {
+	margin-right: 0;
+}
+
+.cTap {
+	color: #591c05;
+	font-weight: bold;
+	width: 240px;
+	padding: 8px 20px;
+	background: #edc;
+	border-radius: 4px;
+}
+
+.cTap:hover {
+	opacity: 0.8;
+}
+
+.orange {
+	color: #fbf8ef;
+	font-weight: bold;
+	width: 240px;
+	padding: 8px 20px;
+	background: #e7a536;
+	border-radius: 4px;
+}
+
+.categoryFrom {
+	width: 570px;
+	margin-bottom: 50px;
+}
+
+#categoryGDelete,
+#categoryPDelete {
+	display: none;
+}
+
+.searchSelect.top48 {
+	min-width: 170px;
+}
+
+.searchSelect.top48::before {
+	content: "";
+	position: absolute;
+	top: 48px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666;
+	pointer-events: none;
+}
+
+#submitGDeleteButton,
+#submitPDeleteButton {
+	color: #fbf8ef;
+	background: #591c05;
+	margin: 4px auto 0;
+	padding: 6px 10px;
+	border-radius: 5px;
+}

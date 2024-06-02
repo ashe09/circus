@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="CIRCUS" />
+    <meta
+      name="description"
+      content="「CIRCUS」はクリエイターやアーティストに特化したクラウドソーシングサービスです。作品やパフォーマンスなど幅広いジャンルの商品を簡単に売り買いできます。あらゆるジャンルのスキルを持つアーティストを探し、気軽に仕事の依頼ができます。会員登録すると会員限定のイベントやサービスを利用することができます。"
+    />
+    <title>CIRCUS</title>
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      type="../image/png"
+      href="../images/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="../image/png" href="icon-192x192.png" />
+    <link href="../css/destyle.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/service.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/eventPage.css" rel="stylesheet" />
+    <link href="../css/eventApp.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <link href="../css/signUp.css" rel="stylesheet" />
+    <link href="../css/gift.css" rel="stylesheet" />
+    <link href="../css/mypage.css" rel="stylesheet" />
+    <link href="../css/administrator.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="top">
+    <div class="wrapper adminGWrapper">
+      <header class="headButtons">
+        <h1 class="logoButton">
+          <a href="../index.html"
+            ><img src="../images/logo_sample.jpg" alt="circus Website"
+          /></a>
+        </h1>
+        <div class="mcButtonArea">
+          <a href="../mypage/mypage.html" class="mcButtons mypageButton"
+            >マイページ</a
+          >
+          <a href="../gifts/cartIn.html" class="mcButtons cartButton"
+            >買い物かご</a
+          >
+        </div>
+        <div class="lsButtonArea">
+          <button class="lsButtons l">ログイン</button>
+          <a href="../signup/signup.html" class="lsButtons s">新規登録</a>
+        </div>
+        <button
+          type="button"
+          id="hamburger"
+          class="hamburger hamFrame"
+          aria-controls="headerNav"
+          aria-expanded="false"
+        >
+          <div class="line"></div>
+          <div class="menu">MENU</div></button
+        ><!-- /.hamberger -->
+      </header>
+      <!-- /header -->
+      <nav class="headerNav">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../service.html">Service</a></li>
+          <li><a href="../news.html">News</a></li>
+          <li><a href="../gifts/gifts.html">Gifts</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contact/contact.php">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /.headerNav -->
+      <div class="blackBack"></div>
+      <!-- /.blackBack -->
+      <div class="modal">
+        <button class="close">
+          <img src="../images/grayClose.png" alt="close_button" />
+        </button>
+        <div class="loginForm">
+          <h2>ログイン</h2>
+          <form action="home.html" method="post">
+            <!-- あとで loginConfirm.php に変える -->
+            <label
+              >メールアドレス<br />
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="例）info@circus.co.jp"
+                id="leForm"
+            /></label>
+            <label
+              >パスワード<br />
+              <input
+                type="password"
+                name="password"
+                placeholder="パスワード"
+                id="lpForm"
+            /></label>
+            <input
+              type="submit"
+              name="login"
+              value="ログイン"
+              id="loginButton"
+            />
+            <p class="signupGuide">
+              新規会員登録は<a href="../signup/signup.html">こちら</a>
+            </p>
+          </form>
+        </div>
+        <!-- /.loginForm -->
+      </div>
+      <!-- /.modal -->
+      <div class="categoryAreaBack"></div>
+      <!-- /.categoryAreaBack -->
+      <div class="categoryArea">
+        <button class="adminmenuSelect aselect">
+          <i class="fas fa-th-list"></i>管理メニュー
+        </button>
+        <nav class="adminMenu cmenu">
+          <button class="categoryClose">
+            <img src="../images/whiteClose.png" alt="close_button" />
+          </button>
+          <ul>
+            <li>
+              <a href="index.html"><i class="fas fa-gift"></i>Gifts一覧</a>
+            </li>
+            <li>
+              <a href="projectsRecord.html"
+                ><i class="fas fa-user-friends"></i>Projects一覧</a
+              >
+            </li>
+            <li>
+              <a href="eventAppRecord.php"
+                ><i class="fas fa-address-book"></i>イベント申し込み</a
+              >
+            </li>
+            <li>
+              <a href="contactRecord.php"
+                ><i class="fas fa-envelope"></i>お問い合わせ</a
+              >
+            </li>
+            <li>
+              <a href="categoryEdit.html"
+                ><i class="fas fa-list-ul"></i>カテゴリー管理</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.categoryArea -->
+      <main class="adminPage">
+        <div class="administrator">
+          <h2 class="sectionTitle">Administrator</h2>
+          <div class="subheadBar adminG">
+            <h3>Gifts List</h3>
+          </div>
+          <form
+            action="categoryGSearchResult.html"
+            method="post"
+            class="categorySearchFrom"
+          >
+            <div class="formItem searchSelect">
+              <label for="categorySearch">Giftsカテゴリー検索</label><br />
+              <select id="categorySearch" name="categorySearch">
+                <option value="" hidden>選択してください</option>
+                <option value="graphic">Graphic</option>
+                <option value="product">Product</option>
+              </select>
+            </div>
+            <!-- /.formItem -->
+            <div class="submitItem searchSubmit">
+              <input
+                type="submit"
+                name="confirm"
+                value="検 索"
+                id="submitButton"
+                class="searchButton"
+              />
+            </div>
+            <!-- /.submitItem -->
+          </form>
+          <table class="adRecord">
+            <tr>
+              <th>ID</th>
+              <th>登録日時</th>
+              <th>編集</th>
+              <th>削除</th>
+              <th>カテゴリー</th>
+              <th class="th200">Giftsタイトル</th>
+              <th>販売価格</th>
+              <th class="th80">画像1</th>
+              <th class="th80">画像2</th>
+              <th class="th80">画像3</th>
+              <th class="th450">Giftsの詳細</th>
+              <th class="th120">タイプ</th>
+              <th class="th200">サイズ</th>
+              <th class="th200">素材</th>
+              <th>代金受け取り</th>
+              <th>発送</th>
+              <th>送料</th>
+              <th class="th200">サイトURL</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2024.09.01.09:00:00</td>
+              <td class="ed">編集</td>
+              <td class="ed">削除</td>
+              <td>Graphic</td>
+              <td class="gpName">商品名</td>
+              <td>5,000円</td>
+              <td class="admingiftsImg">
+                <img src="../images/logo_sample.jpg" alt="Gifts画像1" />
+              </td>
+              <td class="admingiftsImg">
+                <img src="../images/logo_sample.jpg" alt="Gifts画像2" />
+              </td>
+              <td class="admingiftsImg">
+                <img src="../images/logo_sample.jpg" alt="Gifts画像3" />
+              </td>
+              <!--          		詳細ボタンを作るか、編集画面で確認するようにする-->
+              <td class="left">
+                詳細な説明。詳細な説明。詳細な説明。詳細な説明。詳細な説明。詳細な説明。詳細な説明。詳細な説明。詳細な説明。詳細な説明。
+              </td>
+              <td>絵画</td>
+              <td>50cm×50cm</td>
+              <td>キャンバス・油彩</td>
+              <td>振り込み</td>
+              <td>ヤマト運輸</td>
+              <td>3,000円</td>
+              <td>https://www.yamada.com</td>
+            </tr>
+          </table>
+          <div class="paginationWrapper">
+            <nav class="pagination">
+              <ul>
+                <li>
+                  <a href="#" class="pageBack pageNumber"
+                    ><i class="fa fa-chevron-left"></i
+                  ></a>
+                </li>
+                <li>
+                  <span aria-current="page" class="pageNumber current">1</span>
+                </li>
+                <li><a href="#" class="pageNumber">2</a></li>
+                <li><a href="#" class="pageNumber">3</a></li>
+                <li>
+                  <a href="#" class="pageNext pageNumber"
+                    ><i class="fa fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.paginationWrapper giftPage-->
+        </div>
+        <!-- /.administrator -->
+      </main>
+      <!-- /main -->
+      <footer>
+        <nav class="footerNav">
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../service.html">Service</a></li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../gifts/gifts.html">Gifts</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="../contact/contact.php">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="pageTop"><a href="#top"></a></p>
+        <p id="copyRight"><small>Copyright&copy; CIRCUS </small></p>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <!-- /.wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

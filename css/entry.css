@@ -1,0 +1,39 @@
+.wrapper {
+  background-image: url("../images/background03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-position: center;
+}
+
+.entry {
+  margin: 0 auto;
+  padding: 80px 20px 0;
+  text-align: center;
+}
+
+.confirmArea {
+  text-align: left;
+}
+
+.formArea {
+  text-align: left;
+}
+
+.arrowBack {
+  background: #ffdd90;
+  margin-top: 50px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .confirmArea {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .entry {
+    padding: 50px 20px 0;
+  }
+}

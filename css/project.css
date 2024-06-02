@@ -1,0 +1,29 @@
+/* project.html
+=======================*/
+.wrapper {
+	background: #fbf8ef;
+}
+
+.giftImg {
+	border-radius: 0;
+}
+
+.giftImg img{
+	border-radius: 0;
+}
+
+#projectsmodal01,
+#projectsmodal05 {
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  padding: 20px 20px 30px;
+  background-color: #fefdfb;
+  border-radius: 10px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+	transform: translateX(-50%);
+	z-index: 60;
+	display: none;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="CIRCUS" />
+    <meta
+      name="description"
+      content="「CIRCUS」はクリエイターやアーティストに特化したクラウドソーシングサービスです。作品やパフォーマンスなど幅広いジャンルの商品を簡単に売り買いできます。あらゆるジャンルのスキルを持つアーティストを探し、気軽に仕事の依頼ができます。会員登録すると会員限定のイベントやサービスを利用することができます。"
+    />
+    <title>CIRCUS</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="file:///Macintosh HD/Applications/MAMP/htdocs/images/favicon.ico"
+    />
+    <link rel="apple-touch-icon" type="image/png" href="#" />
+    <link rel="icon" type="image/png" href="#" />
+    <link href="css/destyle.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <link href="css/service.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <header class="headButtons">
+        <h1 class="logoButton">
+          <a href="index.html"
+            ><img src="images/logo_sample.jpg" alt="circus Website"
+          /></a>
+        </h1>
+        <div class="lsButtonArea">
+          <button class="lsButtons l">ログイン</button>
+          <a href="signup/signup.html" class="lsButtons s">新規登録</a>
+        </div>
+        <button
+          type="button"
+          id="hamburger"
+          class="hamburger hamFrame"
+          aria-controls="headerNav"
+          aria-expanded="false"
+        >
+          <div class="line"></div>
+          <div class="menu">MENU</div></button
+        ><!-- /.hamberger -->
+      </header>
+      <!-- /header -->
+      <nav class="headerNav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="gifts/gifts.html">Gifts</a></li>
+          <li><a href="projects/projects.html">Projects</a></li>
+          <li><a href="contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /.headerNav -->
+      <div class="blackBack"></div>
+      <!-- /.blackBack -->
+      <div class="modal">
+        <button class="close">
+          <img src="images/grayClose.svg" alt="close_button" />
+        </button>
+        <div class="loginForm">
+          <h2>ログイン</h2>
+          <form action="home.html" method="post">
+            <!-- あとで loginConfirm.php に変える -->
+            <label
+              >メールアドレス<br />
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="例）info@circus.co.jp"
+                id="leForm"
+            /></label>
+            <label
+              >パスワード<br />
+              <input
+                type="password"
+                name="password"
+                placeholder="パスワード"
+                id="lpForm"
+            /></label>
+            <input
+              type="submit"
+              name="login"
+              value="ログイン"
+              id="loginButton"
+            />
+            <p class="signupGuide">
+              新規会員登録は<a href="signup/signup.html">こちら</a>
+            </p>
+          </form>
+        </div>
+        <!-- /.loginForm -->
+      </div>
+      <!-- /.modal -->
+      <main>
+        <section class="service">
+          <h2 class="sectionTitle">Service</h2>
+          <h3 class="serviceSubhead">会員登録すると...</h3>
+          <div class="serviceWrap">
+            <div class="serviceItem">
+              <p class="serviceImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <h3 class="subhead">Giftsの売り買い</h3>
+              <p class="serviceText">
+                オンラインのマーケットで様々なジャンルのクリエイターたちがArtistsとして登録し、作品やスキル、パフォーマンスなどをGifts（商品）として出品できます。Partnersは気に入ったGiftsを購入することができます。
+              </p>
+            </div>
+            <!-- /.serviceItem -->
+            <div class="serviceItem">
+              <p class="serviceImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <h3 class="subhead">仕事の発注と提案</h3>
+              <p class="serviceText">
+                PartnersはArtistsに対して仕事やプロジェクトの依頼を提案し、受注できるクリエイターを気軽に探すことができます。またArtistsが使用できる制作場所や物品をGifts（商品）として出品することも可能です。
+              </p>
+            </div>
+            <!-- /.serviceItem -->
+            <div class="serviceItem">
+              <p class="serviceImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <h3 class="subhead">Artistsの活動サポート</h3>
+              <p class="serviceText">
+                あらゆるArtistsが活躍できるよう様々なイベントやセミナーを企画します。また海外での活動や留学を検討しているクリエイターには有料のサポートサービスも行なっています。
+              </p>
+            </div>
+            <!-- /.serviceItem -->
+          </div>
+          <!-- /.serviceWrap -->
+        </section>
+        <!-- /.service -->
+        <section class="cases">
+          <h2 class="sectionTitle">Cases</h2>
+          <p class="subhead role">Artists</p>
+          <div class="contentWrap">
+            <div class="casesContent">
+              <p class="casesImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <p class="users">クラフト作家</p>
+              <p class="aboutText">
+                CIRCUSで自分の作品を販売したり仕事の依頼を受けたりして、自分のスキルで収入を得られるようになった。
+              </p>
+            </div>
+            <div class="casesContent">
+              <p class="casesImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <p class="users">画家</p>
+              <p class="aboutText">
+                個展の会場を探したり、大きな作品を制作するための場所を見つけるのに便利。
+              </p>
+            </div>
+            <div class="casesContent">
+              <p class="casesImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <p class="users">ミュージシャン</p>
+              <p class="aboutText">
+                ライブのチケット販売に使える。CIRCUSで知り合ったArtistsやPartnersともコラボしてライブを開催している。
+              </p>
+            </div>
+          </div>
+          <!-- /.contentWrap -->
+          <p class="subhead role">Partners</p>
+          <div class="contentWrap">
+            <div class="casesContent">
+              <p class="casesImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <p class="users">イベンター</p>
+              <p class="aboutText">
+                プロジェクトを提案すると、参加してくれるArtistsが短時間でたくさん見つかるので効率がいい。
+              </p>
+            </div>
+            <div class="casesContent">
+              <p class="casesImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <p class="users">アートバイヤー</p>
+              <p class="aboutText">
+                クリエイターに特化しているので、ほしい作品やスキルを持っているArtistsを見つけやすい。
+              </p>
+            </div>
+            <div class="casesContent">
+              <p class="casesImg">
+                <img src="images/logo_sample.jpg" alt="" />
+              </p>
+              <p class="users">ショップオーナー</p>
+              <p class="aboutText">
+                店では売れないアンティーク品などが、撮影の美術品としてよく売れる。
+              </p>
+            </div>
+          </div>
+          <!-- /.contentWrap -->
+        </section>
+        <!-- /.cases -->
+      </main>
+      <!-- /main -->
+      <footer>
+        <nav class="footerNav">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gifts/gifts.html">Gifts</a></li>
+            <li><a href="projects/projects.html">Projects</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="pageTop"><a href="#top"></a></p>
+        <p id="copyRight"><small>Copyright&copy; CIRCUS </small></p>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <!-- /.wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

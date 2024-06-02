@@ -1,0 +1,153 @@
+.wrapper {
+	background-image: url("../images/background02.png");
+}
+
+.event {
+  padding: 80px 20px 0;
+}
+
+.eventWrap {
+  display: block;
+}
+
+.eventItem {
+  width: 100%;
+  margin: 0 auto 80px;
+  display:-webkit-box;
+	display:-ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.eventImg {
+  width: 40%;
+  min-width: 200px;
+  margin: 0 50px 0 0;
+}
+
+.eventContent {
+  width: 70%;
+}
+
+.eventTitle {
+  padding-top: 0;
+  text-align: center;
+}
+
+.eventText {
+  margin-bottom: 15px;
+}
+
+.eventTable {
+  border-collapse: separate;
+  border-spacing: 0px 2px;
+}
+
+.eventTable th {
+  background: #ffcf68;
+  padding: 4px 4px 4px 15px;
+}
+
+.eventTable .first {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.eventTable td {
+  padding-left: 1.6rem;
+  background: #f3e9ce;
+  padding: 4px 15px;
+}
+
+.eventTable .last {
+  border-radius: 0 0 10px 10px;
+}
+
+.tapButton.app {
+  margin: 30px auto 50px;
+}
+
+.tapButton.app:last-child {
+  margin-bottom: 0;
+}
+
+.paginationWrapper {
+  padding-top: 80px;
+}
+
+.pagination ul {
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  display:-webkit-box;
+	display:-ms-flexbox;
+	display: flex;
+}
+
+.pagination li {
+  overflow: hidden;
+  margin: 4px;
+  padding: 0;
+}
+
+.pagination a, .pagination span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 3px;
+  border-radius: 50%;
+  color: #591c05;
+}
+
+.pagination a:hover {
+  width: 40px;
+  height: 40px;
+  margin: 0 3px 0 0;
+  border-radius: 50%;
+  color: #fff;
+  background: #591c05;
+}
+
+.pagination .current {
+  color: #591c05;
+  cursor: default;
+  margin: 0 3px 0 0;
+  background: #ffcf68;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+  .eventItem {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .eventImg {
+    width: 40%;
+    margin: 0 auto 30px;
+  }
+
+  .eventContent {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+  .event {
+    padding: 50px 20px 0;
+  }
+
+	.pagination ul {
+		width: 220px;
+	}
+	
+	.pagination a, .pagination span {
+		width: 34px;
+		height: 34px;
+		line-height: 30px;
+	}
+}

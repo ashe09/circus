@@ -1,0 +1,275 @@
+/* cartIn.html
+=======================*/
+.wrapper {
+	background: #fbf8ef;
+}
+
+.cartTablePC,
+.cartTableST {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 2px 2px;
+	margin-bottom: 50px;
+}
+
+.cartTableST {
+	display: none;
+}
+
+.cartTablePC th,
+.cartTableST th {
+	color: #fbf8ef;
+  background: #591c05;
+  padding: 4px 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.cartTablePC td,
+.cartTableST td {
+	min-height: 20px;
+  background: #edc;
+  padding: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.cartpName {
+	border-radius: 10px 0px 0px 0px;
+	width: 40%;
+}
+
+.cartPrice {
+	width: 15%;
+}
+
+.cartquantity {
+	width: 15%;
+}
+
+.cartDelete {
+	width: 15%;
+}
+
+.cartSubtotal {
+	border-radius: 0px 10px 0px 0px;
+	width: 15%;
+}
+
+.cartInImg {
+	width: 100px;
+	height: 100px;
+	margin-right: 30px;
+}
+
+.cartTotalLabel {
+	color: #591c05;
+	margin-top: 50px;
+	padding: 6px 14px;
+	border: 1px solid #591c05;
+	border-radius: 4px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.cartTotal {
+	margin-right: 20px;
+}
+
+#quantity {
+	margin-left: 0;
+	text-align: center;
+}
+
+.cartTablePC .tdShipping,
+.cartTablePC .tdTotal {
+	padding: 4px 22px 4px 10px;
+  text-align: right;
+}
+
+.cartTotal {
+	border-radius: 0px 0px 0px 10px;
+}
+
+.tdTotal {
+	border-radius: 0px 0px 10px 0px;
+}
+
+.cartInbuttonArea {
+	padding-bottom: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#quantityST {
+	width: 80px;
+	padding: 4px 10px;
+	background: #fefdfb;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.arrowBackC {
+	background: #ffdd90;
+	margin: 8px auto 8px 0;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+.tapButton.procedure {
+	margin: 0;
+}
+
+/* purchase.php
+=======================*/
+.purchase {
+	padding: 80px 20px 0;
+}
+
+.cartIn p {
+	margin-bottom: 10px;
+}
+
+.radio {
+	margin-bottom: 54px;
+}
+
+.radio .transfer {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 120px;
+	height: 38px;
+	margin-right: 30px;
+	line-height: 38px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+
+.radio .cod {
+	position: absolute;
+	top: 60px;
+	left: 150px;
+	width: 120px;
+	height: 38px;
+	margin-right: 30px;
+	line-height: 38px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+
+.arrowBack {
+	margin-top: 50px;
+}
+
+/* purchaseConfirm.php
+=======================*/
+.purchaseSentence {
+	text-align: center;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+	.cartTablePC {
+		display: none;
+	}
+
+	.cartTableST {
+		width: 480px;
+		margin: 0 auto 50px;
+		display: block;
+	}
+
+	.cartTableST th {
+		width: 80px;
+	}
+
+	.cartTableST td {
+		width: 400px;
+	}
+
+	.tdpName {
+		border-radius: 0px 10px 0px 0px;
+	}
+	
+	.cartInImg {
+		display: none;
+	}
+
+	.quantityLabel::before {
+		display: none;
+	}
+
+	.cartSubtotal {
+		border-radius: 0;
+	}
+
+	.cartTotal {
+		border-radius: 0px 0px 0px 10px;
+	}
+	
+	.tdTotal {
+		border-radius: 0px 0px 10px 0px;
+	}
+	
+	.cartInbuttonArea {
+		display: block;
+		text-align: center;
+	}
+	
+	.tapButton.procedure {
+		margin: 20px auto 0;
+	}
+
+/* purchase.php
+=======================*/
+	.postCodeWrap {
+    margin-top: 0;
+	}
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+	.purchase {
+		padding: 50px 20px 0;
+	}
+
+	.cartTableST {
+		width: 80%;
+		min-width: 225px;
+	}
+
+	.cartTableST th {
+		width: 20%;
+		min-width: 74px;
+	}
+
+	.cartTableST td {
+		width: 80%;
+	}
+	
+	.radio {
+		margin-bottom: 150px;
+	}
+
+	.radio .transfer {
+    top: 90px;
+	}
+
+	.radio .cod {
+		top: 140px;
+		left: 0;
+	}
+}

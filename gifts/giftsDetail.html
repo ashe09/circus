@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="CIRCUS" />
+    <meta
+      name="description"
+      content="「CIRCUS」はクリエイターやアーティストに特化したクラウドソーシングサービスです。作品やパフォーマンスなど幅広いジャンルの商品を簡単に売り買いできます。あらゆるジャンルのスキルを持つアーティストを探し、気軽に仕事の依頼ができます。会員登録すると会員限定のイベントやサービスを利用することができます。"
+    />
+    <title>CIRCUS</title>
+    <link
+      rel="icon"
+      type="../image/x-icon"
+      href="file:///Macintosh HD/Applications/MAMP/htdocs/images/favicon.ico"
+    />
+    <link rel="apple-touch-icon" type="../image/png" href="#" />
+    <link rel="icon" type="../image/png" href="#" />
+    <link href="../css/destyle.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/service.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/eventPage.css" rel="stylesheet" />
+    <link href="../css/gift.css" rel="stylesheet" />
+    <link href="../css/giftsDetail.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <header class="headButtons">
+        <h1 class="logoButton">
+          <a href="../index.html"
+            ><img src="../images/logo_sample.jpg" alt="circus Website"
+          /></a>
+        </h1>
+        <div class="mcButtonArea">
+          <a href="../mypage/mypage.html" class="mcButtons mypageButton"
+            >マイページ</a
+          >
+          <a href="cartIn.html" class="mcButtons cartButton">買い物かご</a>
+        </div>
+        <div class="lsButtonArea">
+          <button class="lsButtons l">ログイン</button>
+          <a href="../signup/signup.html" class="lsButtons s">新規登録</a>
+        </div>
+        <button
+          type="button"
+          id="hamburger"
+          class="hamburger hamFrame"
+          aria-controls="headerNav"
+          aria-expanded="false"
+        >
+          <div class="line"></div>
+          <div class="menu">MENU</div></button
+        ><!-- /.hamberger -->
+      </header>
+      <!-- /header -->
+      <nav class="headerNav">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../service.html">Service</a></li>
+          <li><a href="../news.html">News</a></li>
+          <li><a href="gifts.html">Gifts</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /.headerNav -->
+      <div class="blackBack"></div>
+      <!-- /.blackBack -->
+      <div class="modal">
+        <button class="close">
+          <img src="../images/grayClose.svg" alt="close_button" />
+        </button>
+        <div class="loginForm">
+          <h2>ログイン</h2>
+          <form action="home.html" method="post">
+            <!-- あとで loginConfirm.php に変える -->
+            <label
+              >メールアドレス<br />
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="例）info@circus.co.jp"
+                id="leForm"
+            /></label>
+            <label
+              >パスワード<br />
+              <input
+                type="password"
+                name="password"
+                placeholder="パスワード"
+                id="lpForm"
+            /></label>
+            <input
+              type="submit"
+              name="login"
+              value="ログイン"
+              id="loginButton"
+            />
+            <p class="signupGuide">
+              新規会員登録は<a href="../signup/signup.html">こちら</a>
+            </p>
+          </form>
+        </div>
+        <!-- /.loginForm -->
+      </div>
+      <!-- /.modal -->
+      <div class="categoryArea">
+        <button class="categorySelect01 cselect">
+          <i class="fas fa-gift"></i>Category
+        </button>
+        <nav class="categoryMenu01 cmenu">
+          <button class="categoryClose">
+            <img src="../images/whiteClose.svg" alt="close_button" />
+          </button>
+          <ul>
+            <li>
+              <a href="../index.html"
+                ><i class="fas fa-pencil-alt"></i>Graphic</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-box-open"></i>Product</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-laptop"></i>Web</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-tshirt"></i>Fashion</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-music"></i>Music</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-palette"></i>Paint</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-hammer"></i>Sculpture</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-video"></i>Movie</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-camera"></i>Photo</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-desktop"></i>CG</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.categoryArea -->
+      <main>
+        <div class="gifts">
+          <h2 class="sectionTitle">Gifts</h2>
+          <div class="sliderArea">
+            <p id="slideImg">
+              <img src="../images/sample1.png" alt="giftの写真1" />
+              <img src="../images/sample2.png" alt="giftの写真2" />
+              <img src="../images/sample3.png" alt="giftの写真3" />
+            </p>
+            <div class="pnArea">
+              <button id="prev" class="arrow">前に戻る</button>
+              <button id="next" class="arrow">次へ</button>
+            </div>
+          </div>
+          <!-- /.sliderArea -->
+          <div class="giftsDetailArea">
+            <div class="userDetail">
+              <span class="categoryTitle03">Artists</span>
+              <dl class="userDesc">
+                <dt class="userName">
+                  <a href="#" class="linkBrown">ユーザー名</a>
+                </dt>
+                <dd class="profile">
+                  プロフィール紹介。プロフィール紹介。プロフィール紹介。プロフィール紹介。プロフィール紹介。プロフィール紹介。プロフィール紹介。プロフィール紹介。
+                </dd>
+              </dl>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkBrown url"
+                >WebサイトURL<i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <!-- /.userDetail -->
+            <div class="giftsDetail">
+              <span class="categoryTitle02">NEW</span>
+              <h3 class="giftTitle titleDetail">商品タイトル</h3>
+              <p class="detailDesc">
+                コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。コンセプトやセールスポイントの説明。
+              </p>
+              <dl class="giftsDesc marginB0">
+                <dt class="modalLabel detailPage">タイプ</dt>
+                <dd>彫刻作品</dd>
+              </dl>
+              <dl class="giftsDesc marginB0">
+                <dt class="modalLabel detailPage">サイズ</dt>
+                <dd>50×50×50mm</dd>
+              </dl>
+              <dl class="giftsDesc marginB0">
+                <dt class="modalLabel detailPage">素 材</dt>
+                <dd>ブロンズ</dd>
+              </dl>
+            </div>
+            <!-- /.giftsDetail -->
+            <div class="purchaseDetail">
+              <span class="categoryTitle03">Price</span>
+              <p class="price">&yen;10,000-<span class="small">(税込)</span></p>
+              <dl class="giftsDesc purchase">
+                <dt class="modalLabel detailPage">支 払</dt>
+                <dd>現金（振込 or 代引）</dd>
+                <dt class="modalLabel detailPage">発 送</dt>
+                <dd>宅配便</dd>
+                <dt class="modalLabel detailPage">送 料</dt>
+                <dd>&yen;3,000-</dd>
+              </dl>
+              <aside>
+                <p>※北海道・沖縄・離島への発送は追加送料がかかります。</p>
+              </aside>
+              <form action="cartIn.php" method="POST"></form>
+              <label for="quantity"
+                ><span class="quantityLabel">数 量</span></label
+              >
+              <select id="quantity" name="quantity">
+                <option value="" hidden>選 択</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+              </select>
+              <!-- <form action="cartIn.html" method="POST">
+                <div class="submitItem">
+                  <input type="submit" name="confirm" value="確 認" id="submitButton">
+                </div>/.submitItem
+              </form> -->
+              <div class="tapButton cart">
+                <input type="hidden" />
+                <input
+                  type="submit"
+                  name="cartIn"
+                  value="カートに入れる"
+                  id="cartInButton"
+                  class="tapButton cart"
+                />
+              </div>
+              <!-- <a href="cartIn.html" class="tapButton cart">カートに入れる</a> -->
+            </div>
+            <!-- /.purchaseDetail -->
+          </div>
+          <!-- /.giftsDetailArea -->
+          <a
+            href="#"
+            onclick="javascript:window.history.back(-1);return false;"
+            class="arrowBack linkBrown"
+            ><i class="fas fa-caret-left"></i>Gifts一覧ページに戻る</a
+          >
+          <div class="paginationWrapper giftPage">
+            <nav class="pagination">
+              <ul>
+                <li>
+                  <a href="#" class="pageBack pageNumber"
+                    ><i class="fa fa-chevron-left"></i
+                  ></a>
+                </li>
+                <li>
+                  <span aria-current="page" class="pageNumber current">1</span>
+                </li>
+                <li><a href="#" class="pageNumber">2</a></li>
+                <li><a href="#" class="pageNumber">3</a></li>
+                <li>
+                  <a href="#" class="pageNext pageNumber"
+                    ><i class="fa fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.paginationWrapper giftPage-->
+        </div>
+        <!-- /.gifts -->
+      </main>
+      <!-- /main -->
+      <footer>
+        <nav class="footerNav">
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../service.html">Service</a></li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="gifts.html">Gifts</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="pageTop"><a href="#top"></a></p>
+        <p id="copyRight"><small>Copyright&copy; CIRCUS </small></p>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <!-- /.wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

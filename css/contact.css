@@ -1,0 +1,250 @@
+/* contact.php
+=======================*/
+.wrapper {
+	background-image: url("../images/background01.png");
+}
+
+.cWrapper {
+  padding: 80px 20px 0;
+}
+
+.cWrapper p {
+  text-align: center;
+}
+
+.formArea {
+  padding-top: 50px;
+}
+
+form {
+  width: 60%;
+  min-width: 220px;
+  margin: 0 auto;
+}
+
+.formItem {
+  padding-bottom: 15px;
+}
+
+.required {
+  color: #fbf8ef;
+  background: #591c05;
+  margin-left: 14px;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+label {
+  padding-bottom: 6px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), optgroup, select, textarea {
+  width: 100%;
+	margin-top: 5px;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.formItem.cselect {
+  position: relative;
+}
+
+.formItem.cselect::before {
+  content: "";
+  position: absolute;
+  top: 49px;
+  right: 14px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #666;
+  pointer-events: none;
+}
+
+#contactKind {
+  cursor: pointer;
+}
+
+textarea {
+  height: 130px;
+}
+
+.submitItem {
+  padding-top: 30px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#submitButton {
+  color: #fbf8ef;
+  background: #591c05;
+  margin: 0 auto;
+  padding: 6px 10px;
+	border: #591c05;
+  border-radius: 5px;
+}
+
+#submitButton:hover {
+  opacity: 0.8;
+}
+
+/* common
+=======================*/
+#logout {
+	width: 100px;
+	min-width: initial;
+	height: 38px;
+	margin: 0 0 0 20px;
+	border-radius: 4px;
+	z-index: 10;
+}
+
+#logout_form {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+	border-radius: 4px;
+	line-height: 38px;
+	z-index: 10;
+}
+
+/* confirm.php
+=======================*/
+.confirmArea {
+  padding-top: 50px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.confirmArea dl {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.confirmArea dt {
+  width: 33%;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+.confirmArea dt:before {
+  content: none;
+}
+
+.confirmArea dd {
+  width: 70%;
+}
+
+.backButton {
+  width: 60%;
+  min-width: 220px;
+  margin-right: 20%;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+/* contact.php*/
+  form {
+    width: 75%;
+  }
+
+/* confrim.php*/
+  .confirmArea {
+    width: 90%;
+    text-align: center;
+  }
+
+  .confirmArea dl {
+    display: block;
+  }
+
+  .confirmArea dt {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .confirmArea dd {
+    width: 50%;
+    min-width: 340px;
+    min-height: 38px;
+    padding: 5px 8px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  .confirmArea .content {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .submitItem {
+    display: block;
+  }
+
+  .backButton {
+    width: 75%;
+    margin: 0 auto 20px;
+  }
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+/* contact.php*/
+  .cWrapper {
+    padding: 50px 20px 0;
+  }
+
+  .cWrapper p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .confirmArea {
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .confirmArea dd {
+    width: 100%;
+    min-width: 220px;
+    margin: 0 auto;
+  }
+
+  .confirmArea .content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+	/* common
+	=======================*/
+  #logout {
+    z-index: 30;
+  }
+	
+	#logout_form:hover {
+		color: #333;
+		background: rgba(255,255,255,0.7);
+	}
+	
+	.openNav #logout {
+		right: 50%;
+		transform: translateX(50%);
+	}
+}

@@ -1,0 +1,253 @@
+/* signup.php
+=======================*/
+.wrapper {
+	background-image: url("../images/background02.png");
+}
+
+.signupSubhead {
+  color: #591c05;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  min-width: 215px;
+}
+
+.radio {
+	position: relative;
+}
+
+.radio .artists {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 120px;
+  height: 38px;
+  margin-right: 30px;
+  line-height: 37px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+	cursor: pointer;
+}
+
+.radio .partners {
+  position: absolute;
+  top: 33px;
+  left: 150px;
+  width: 120px;
+  height: 38px;
+  margin-right: 30px;
+  line-height: 37px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+	cursor: pointer;
+}
+
+.postCode input[type="text"] {
+  width: 180px;
+}
+
+.select {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display: flex;
+}
+
+.year {
+  width: 32%;
+}
+
+.formFlex {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display: flex;
+}
+
+.nen {
+  line-height: 38px;
+	margin-top: 5px;
+}
+
+#year,#month,#day {
+	width: 165px;
+}
+
+.select input[type="text"],
+.select select {
+  margin-right: 4px;
+}
+
+.mselect,
+.dselect {
+  width: 32%;
+  margin-left: 10px;
+  position: relative;
+}
+
+.select select {
+  height: 38px;
+  margin-top: 33px;
+  padding: 4px 7px;
+  cursor: pointer;
+}
+
+.tsukihi {
+  margin-top: 37px;
+}
+
+.mselect::before,
+.dselect::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 26px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666;
+  pointer-events: none;
+}
+
+.photo input[type="file"] {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.photo label {
+  width: 160px;
+  height: 38px;
+	line-height: 30px;
+  background: #ffcf68;
+	margin-top: 5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.photoName {
+  width: 160px;
+  margin: 4px 14px 0;
+  line-height: 38px;
+}
+
+.photoClear {
+  width: 180px;
+  height: 38px;
+  background: #afdfe4;
+	margin-top: 5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-align: center;
+  display: none;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+  .select {
+    display: block;
+  }
+
+  .year {
+    width: 230px;
+  }
+
+  .mselect, .dselect {
+    width: 230px;
+    margin: 0;
+  }
+
+  .mselect::before, .dselect::before {
+    top: 24px;
+    right: 73px;
+  }
+
+  .select select {
+    margin-top: 8px;
+    padding: 4px 14px;
+  }
+
+  .tsukihi {
+    margin-top: 12px;
+  }
+
+  .flexWrap {
+    -ms-flex-wrap: wrap;
+  	flex-wrap: wrap;
+  }
+
+  .photoClear {
+    margin-top: 5px;
+  }
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+  .cWrapper {
+    padding: 50px 10px 0;
+}
+
+  .requiredLabel {
+    width: 40px;
+    height: 22px;
+    margin: 0;
+    line-height: 22px;
+  }
+
+  .radio .artists {
+    top: 63px;
+  }
+
+  .radio .partners {
+    top: 112px;
+    left: 0;
+  }
+
+  .postCodeWrap {
+    margin-top: 88px;
+  }
+
+  .year {
+    width: 200px;
+  }
+
+  .nen {
+    margin-top: 5px;
+  }
+
+  .mselect, .dselect {
+    width: 200px;
+    margin: 0;
+  }
+
+  .mselect::before, .dselect::before {
+    top: 24px;
+    right: 43px;
+  }
+ 
+  .photo {
+    display: block;
+  }
+
+  .photo .photoName {
+    width: 200px;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+

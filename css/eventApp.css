@@ -1,0 +1,91 @@
+/* eventApp.php
+=======================*/
+.wrapper {
+	background-image: url("../images/background03.png");
+}
+
+#eventTitle {
+	cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.formItem.radio {
+	height: 81px;
+}
+
+.radio {
+	position: relative;
+}
+
+.radio label {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	width: 120px;
+	height: 38px;
+	margin-right: 30px;
+	line-height: 38px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.radio input:checked + label {
+	background: #ffcf68;
+	border-color: #ffcf68;
+}
+
+.radio .select02 {
+	display: none;
+}
+
+.mbottom {
+	margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label {
+	position: relative;
+	margin-right: 8px;
+	padding-left: 20px;
+}
+
+.checkbox label::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 1.6rem;
+	height: 1.6rem;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	cursor: pointer;
+	display: block;
+}
+
+.checkbox input:checked + label::before {
+	background: #e7a536;
+	border: none;
+}
+
+.checkbox input:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 6px;
+	width: 9px;
+	height: 6px;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(-45deg) translateY(-50%);
+	display: block;
+}
+
+

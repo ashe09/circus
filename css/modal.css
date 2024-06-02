@@ -1,0 +1,100 @@
+/* signup・login modal
+=======================*/
+.signupWrapper, .loginWrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 100;
+  transition: 0.5s;
+  display: none;
+}
+
+.modal {
+  width: 94%;
+  max-width: 450px;
+  height: auto;
+  padding: 30px 30px 40px;
+  background-color: #fefdfb;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fa-times {
+  font-size: 3rem;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.modal h2 {
+  font-size: 2.6rem;
+  color: #555;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.caution {
+  font-size: 1.4rem;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.frase {
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.modal form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal label {
+  font-size: 1.4rem;
+}
+
+#seForm, #leForm, #lpForm {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  padding: 12px 12px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+#temporaryButton, #loginButton {
+  width: 100%;
+  background-color: #cf0026;
+  padding: 14px 10px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#temporaryButton:hover, #loginButton:hover {
+  opacity: 0.9;
+}
+
+.reissue {
+  font-size: 1.4rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#loginForm form a {
+  color: #2e64ef;
+}
+
+#login {
+	display: none;
+}

@@ -1,0 +1,245 @@
+/* giftsDetail.html
+=======================*/
+.wrapper {
+	background: #fbf8ef;
+}
+
+.sliderArea {
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#slideImg {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display: flex;
+}
+
+#slideImg img {
+	width: 100%;
+	min-width:100%;
+	height: 100%;
+}
+
+.pnArea {
+	width: 100%;
+	padding: 0 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 2.5px;
+	transform: translateY(-50%);
+}
+
+#prev {
+	margin-right: auto;
+	background: url(../images/prev.svg) no-repeat;
+}
+
+#next {
+	background: url(../images/next.svg) no-repeat;
+}
+
+.arrow {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.giftsDetailArea {
+	margin-bottom: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: justify;
+}
+
+.userDetail {
+	width: 25%;
+	padding: 20px;
+	background: #edc;
+}
+
+.categoryTitle03 {
+	background: #fefdfb;
+	padding: 2px 10px;
+	border-radius: 2px;
+	letter-spacing: 0.1rem;
+}
+
+.userName {
+	font-weight: bold;
+	padding: 14px 0;
+}
+
+.profile {
+	margin: 30px 0 50px;
+}
+
+.giftsDetail {
+	width: 50%;
+	margin: 0 10px;
+	padding: 20px;
+	background: #edc;
+}
+
+.titleDetail {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.detailDesc {
+	margin: 30px 0 50px;
+}
+
+.giftsDesc {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.giftsDesc:last-child {
+	margin-bottom: 0;
+}
+
+.modalLabel.detailPage {
+	width: 70px;
+	height: auto;
+	background: #fefdfb;
+}
+
+.purchaseDetail {
+	width: 25%;
+	padding: 20px;
+	background: #edc;
+}
+
+.price {
+	color: #591c05;
+	font-weight: bold;
+	padding: 14px 0;
+	letter-spacing: 0.1rem;
+}
+
+.giftsDesc.purchase {
+	margin-top: 30px;
+	display: block;
+}
+
+.giftsDesc.purchase dd {
+	margin: 5px 0 5px 10px;
+}
+
+.purchaseDetail aside {
+	font-size: 1.2rem;
+	margin-bottom: 50px;
+	padding-left: 10px;
+}
+
+.quantityArea {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.quantityLabel {
+	font-size: 1.4rem;
+	line-height: 36px;
+	padding-left: 10px;
+	cursor: default;
+	position: relative;
+}
+
+.quantityLabel::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 122px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #666;
+	pointer-events: none;
+}
+
+#quantity {
+	width: 80px;
+	margin-left: 20px;
+	padding: 4px 10px;
+	background: #fefdfb;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.tapButton.cart {
+	margin-top: 30px;
+}
+
+#cartInButton {
+	vertical-align: baseline;
+}
+
+.arrowBack {
+	background: #ffdd90;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+.fa-caret-left {
+	font-size: 1.8rem;
+	margin-right: 6px;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+	.arrow {
+		width: 15px;
+		height: 15px;
+	}
+
+	.giftsDetailArea {
+		display: block;
+	}
+	
+	.userDetail,
+	.giftsDetail,
+	.purchaseDetail {
+		width: 100%;
+	}
+	
+	.giftsDetail {
+		margin: 10px 0;
+	}
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+	.titleDetail {
+    font-size: 1.8rem;
+}
+
+	.profile,
+	.url,
+	.detailDesc {
+		font-size: 1.4rem;
+	}
+
+	.marginB0 {
+		margin-bottom: 0;
+	}
+
+	.giftsDetail dd {
+		margin: 5px 0 5px 10px;
+	}
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="CIRCUS" />
+    <meta
+      name="description"
+      content="「CIRCUS」はクリエイターやアーティストに特化したクラウドソーシングサービスです。作品やパフォーマンスなど幅広いジャンルの商品を簡単に売り買いできます。あらゆるジャンルのスキルを持つアーティストを探し、気軽に仕事の依頼ができます。会員登録すると会員限定のイベントやサービスを利用することができます。"
+    />
+    <title>CIRCUS</title>
+    <link
+      rel="icon"
+      type="../image/x-icon"
+      href="file:///Macintosh HD/Applications/MAMP/htdocs/images/favicon.ico"
+    />
+    <link rel="apple-touch-icon" type="../image/png" href="#" />
+    <link rel="icon" type="../image/png" href="#" />
+    <link href="../css/destyle.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/service.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/eventPage.css" rel="stylesheet" />
+    <link href="../css/eventApp.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <link href="../css/signUp.css" rel="stylesheet" />
+    <link href="../css/gift.css" rel="stylesheet" />
+    <link href="../css/mypage.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <header class="headButtons">
+        <h1 class="logoButton">
+          <a href="../index.html"
+            ><img src="../images/logo_sample.jpg" alt="circus Website"
+          /></a>
+        </h1>
+        <div class="mcButtonArea">
+          <a href="mypage.html" class="mcButtons mypageButton">マイページ</a>
+          <a href="../gifts/cartIn.html" class="mcButtons cartButton"
+            >買い物かご</a
+          >
+        </div>
+        <div class="lsButtonArea">
+          <button class="lsButtons l">ログイン</button>
+          <a href="../signup/signup.html" class="lsButtons s">新規登録</a>
+        </div>
+        <button
+          type="button"
+          id="hamburger"
+          class="hamburger hamFrame"
+          aria-controls="headerNav"
+          aria-expanded="false"
+        >
+          <div class="line"></div>
+          <div class="menu">MENU</div></button
+        ><!-- /.hamberger -->
+      </header>
+      <!-- /header -->
+      <nav class="headerNav">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../service.html">Service</a></li>
+          <li><a href="../news.html">News</a></li>
+          <li><a href="../gifts/gifts.html">Gifts</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /.headerNav -->
+      <div class="blackBack"></div>
+      <!-- /.blackBack -->
+      <div class="modal">
+        <button class="close">
+          <img src="../images/grayClose.svg" alt="close_button" />
+        </button>
+        <div class="loginForm">
+          <h2>ログイン</h2>
+          <form action="home.html" method="post">
+            <!-- あとで loginConfirm.php に変える -->
+            <label
+              >メールアドレス<br />
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="例）info@circus.co.jp"
+                id="leForm"
+            /></label>
+            <label
+              >パスワード<br />
+              <input
+                type="password"
+                name="password"
+                placeholder="パスワード"
+                id="lpForm"
+            /></label>
+            <input
+              type="submit"
+              name="login"
+              value="ログイン"
+              id="loginButton"
+            />
+            <p class="signupGuide">
+              新規会員登録は<a href="../signup/signup.html">こちら</a>
+            </p>
+          </form>
+        </div>
+        <!-- /.loginForm -->
+      </div>
+      <!-- /.modal -->
+      <main>
+        <div class="mypage cWrapper">
+          <h2 class="sectionTitle">Profile変更</h2>
+          <p>
+            入力内容をご確認ください。<br />
+            よろしければ変更するボタンを<span class="newLine560"
+              >クリックしてください。</span
+            >
+          </p>
+          <div class="confirmArea">
+            <dl>
+              <dt>お名前</dt>
+              <dd>山田　太郎</dd>
+            </dl>
+            <dl>
+              <dt>ふりがな</dt>
+              <dd>やまだ　たろう</dd>
+            </dl>
+            <dl>
+              <dt>ユーザー名</dt>
+              <dd>yamada</dd>
+            </dl>
+            <dl>
+              <dt>メールアドレス</dt>
+              <dd>yamada@gmail.com</dd>
+            </dl>
+            <dl>
+              <dt>パスワード</dt>
+              <dd>表示されません。</dd>
+            </dl>
+            <dl>
+              <dt>どちらで登録しますか？</dt>
+              <dd>Artists</dd>
+            </dl>
+            <dl>
+              <dt>郵便番号</dt>
+              <dd>1234567</dd>
+            </dl>
+            <dl>
+              <dt>住所</dt>
+              <dd>神戸市中央区京町67</dd>
+            </dl>
+            <dl>
+              <dt>電話番号</dt>
+              <dd>090-1234-5678</dd>
+            </dl>
+            <dl>
+              <dt>生年月日</dt>
+              <dd>2000年1月1日</dd>
+            </dl>
+            <dl>
+              <dt>プロフィール写真</dt>
+              <dd>profile.jpg</dd>
+            </dl>
+            <dl>
+              <dt>プロフィール</dt>
+              <dd class="content">
+                プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。プロフィール文章。
+              </dd>
+            </dl>
+            <dl>
+              <dt>サイトURL</dt>
+              <dd>https://www.yamada.com</dd>
+            </dl>
+            <div class="submitItem">
+              <a href="mypage.html" class="backButton">戻 る</a>
+              <form action="modifyComplete.html" method="post">
+                <input
+                  type="submit"
+                  name="submit"
+                  value="変更する"
+                  id="submitButton"
+                />
+              </form>
+              <!-- /form -->
+            </div>
+            <!-- /.submitItem -->
+          </div>
+          <!-- /.confirmArea -->
+        </div>
+        <!-- /.mypage cWrapper-->
+      </main>
+      <!-- /main -->
+      <footer>
+        <nav class="footerNav">
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../service.html">Service</a></li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../gifts/gifts.html">Gifts</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="pageTop"><a href="#top"></a></p>
+        <p id="copyRight"><small>Copyright&copy; CIRCUS </small></p>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <!-- /.wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

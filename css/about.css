@@ -1,0 +1,67 @@
+/* header
+=======================*/
+.wrapper {
+	background-image: url("../images/background02.png");
+}
+
+header {
+	background: #cf0026;
+}
+
+.aboutImg {
+	width: 200px;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.contentWrap {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display: flex;
+}
+
+.aboutContent {
+	width: 45%;
+	min-width: 250px;
+	margin: 30px auto 0;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+.subhead.role {
+	width: 110px;
+	margin: 0 auto 20px;
+	padding: 4px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.conceptContent {
+	width: 60%;
+	min-width: 250px;
+}
+
+/* @media max-width 960px
+=======================*/
+@media screen and (max-width: 960px) {
+	.contentWrap {
+		display: block;
+	}
+	
+	.aboutContent {
+		width: 80%;
+	}
+}
+
+/* @media max-width 560px
+=======================*/
+@media screen and (max-width: 560px) {
+	.aboutContent {
+		width: 100%;
+		box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+	}
+	
+	.conceptContent {
+	width: 100%;
+	}
+}
